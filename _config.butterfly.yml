@@ -1,0 +1,159 @@
+# Site-specific Butterfly settings. New categories come from post front matter.
+nav:
+  logo: /images/TouXiang.jpg
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+menu:
+  首页: / || fas fa-home
+  博客||fas fa-book-open:
+    归档: /archives/ || fas fa-archive
+    分类: /categories/ || fas fa-folder-open
+    标签: /tags/ || fas fa-tags
+
+social:
+  fab fa-github: https://github.com/XI776 || GitHub || '#7aaef7'
+
+favicon: /images/favicon.png
+avatar:
+  img: /images/TouXiang.jpg
+  effect: false
+
+default_top_img: /images/night-sky-hero.png
+index_img: /images/night-sky-hero.png
+archive_img: /images/night-sky-hero.png
+category_img: /images/night-sky-hero.png
+tag_img: /images/night-sky-hero.png
+background: '#f5f7fa'
+
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+
+index_layout: 1
+index_post_content:
+  method: 1
+  length: 160
+
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub:
+    - 记录代码，也记录生活
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: false
+    label: false
+  post:
+    position: center
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: false
+
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+code_blocks:
+  theme: darker
+  macStyle: true
+  height_limit: false
+  word_wrap: false
+  copy: true
+  language: true
+  shrink: false
+  fullpage: true
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: false
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 在代码与日常之间，记录一点成长
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/XI776
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_categories:
+    enable: true
+    limit: 0
+    expand: none
+  card_tags:
+    enable: true
+    limit: 20
+    color: false
+  card_archives:
+    enable: true
+    type: monthly
+    format: YYYY年MM月
+    limit: 8
+  card_post_series:
+    enable: false
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+
+readmode: true
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: false
+
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
+search:
+  use: local_search
+  placeholder: 搜索文章、分类与关键词
+  local_search:
+    preload: false
+    top_n_per_article: 1
+    unescape: false
+
+footer:
+  owner:
+    enable: true
+    since: 2024
+  copyright:
+    enable: true
+    version: false
+  custom_text: '写下所学，慢慢长成自己的知识地图。'
+
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/blog.css">
